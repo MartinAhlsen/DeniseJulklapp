@@ -17,6 +17,10 @@ body {
     color: #fff;
     text-align: center;
     padding: 50px;
+    background-image: url(https://64.media.tumblr.com/cc60473edb90ff9c90ffc1993ac2d4a8/tumblr_mesmd84Il51rt479bo1_500.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 main {
