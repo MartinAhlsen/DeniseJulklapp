@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url(https://i.pinimg.com/originals/4f/f8/cb/4ff8cb05bc608e3ddbf8b72afae52222.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    background-color: #c62828;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    background-image: url(https://64.media.tumblr.com/cc60473edb90ff9c90ffc1993ac2d4a8/tumblr_mesmd84Il51rt479bo1_500.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-grow: 1;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 100px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    display: flex;
+    width: calc(100% - 96px);
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card>div {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .front {
+    transform: rotateY(0deg);
+}
+
+.card .back {
+    transform: rotateY(180deg);
+}
