@@ -8,9 +8,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
-    background-image: url(https://i.pinimg.com/originals/4f/f8/cb/4ff8cb05bc608e3ddbf8b72afae52222.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -18,18 +17,17 @@ body {
     color: #fff;
     text-align: center;
     padding: 50px;
-    background-image: url(https://64.media.tumblr.com/cc60473edb90ff9c90ffc1993ac2d4a8/tumblr_mesmd84Il51rt479bo1_500.jpg);
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
 }
 
 main {
     height: 100%;
     display: flex;
     flex-grow: 1;
-    width: 100vw;
+    /* width: 100vw; */
     flex-direction: column;
+    background-image: url(https://i.pinimg.com/originals/4f/f8/cb/4ff8cb05bc608e3ddbf8b72afae52222.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .card {
@@ -44,6 +42,7 @@ main {
     transition: transform 0.5s;
     display: flex;
     width: calc(100% - 96px);
+    opacity: 0.8;
 }
 
 .card.flipped {
