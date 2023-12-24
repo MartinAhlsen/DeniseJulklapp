@@ -59,11 +59,12 @@ main {
 .card-1 {
     margin: 32px;
     font-size: 2rem;
-    width: 50%;
+    width: 40%;
 }
 
 .card-2 {
     display: none;
+    max-width: 50%;
 }
 
 .container-div {
@@ -78,13 +79,16 @@ main {
     background-size: cover;
     background-position: center;
     margin: 32px;
+    /* position: relative; */
+    /* top: -50%; */
 }
 
 .dejt-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 100px;
+    /* margin-right: 100px; */
+    width: 100%;
 }
 
 .card.fade-out {
