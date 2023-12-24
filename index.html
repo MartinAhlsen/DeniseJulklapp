@@ -1,48 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="script.js" defer></script>
-
     <title>God jul Denise</title>
-  </head>
-  <body>
+</head>
+<body>
     <div class="header">
-      <h1>God jul Denise önskar Sängdjuret och Donguri</h1>
+        <img class="acorn" src="./acorn-clip-art-acorn-png-image-bb631a3991fb8bd8e107764804f6b5f2.png" alt="acorn" />
+        <h1>God jul Denise önskar Sängdjuret och Donguri</h1>
     </div>
     <main>
-      <div class="card" id="card1">
-        <div class="front">
-          <h2>Card 1</h2>
-          <p>This is your first Christmas card.</p>
+        <div class="card-container" id="card-container">
+            <div class="card" id="card1">
+                <div class="card-1">
+                    <h2>Vinterdejt</h2>
+                    <p>När du hittat lösenordet kan du klicka här för att se vad vi ska göra.</p>
+                    <input type="password" id="password-input" placeholder="Enter password" />
+                    <button id="password-submit">Submit</button>
+                </div>
+                <div class="card-2">
+                    <div class="container-div">
+                        <div class="movie-img"></div>
+                        <div class="dejt-info">
+                            <h2>Vi ska gå på Capitol!</h2>
+                            <h3>4/1 - 2024 klockan 14:15</h3>
+                            <p>Sedan blir det mysig promenad med varm choklad och middag hemma &#9829</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="back">
-          <h2>Card 1 Back</h2>
-          <p>Secret message on the back of Card 1.</p>
-        </div>
-      </div>
-      <!-- <div class="card" id="card2">
-        <div class="front">
-          <h2>Card 2</h2>
-          <p>This is your second Christmas card.</p>
-        </div>
-        <div class="back">
-          <h2>Card 2 Back</h2>
-          <p>Secret message on the back of Card 1.</p>
-        </div>
-      </div>
-      <div class="card" id="card3">
-        <div class="front">
-          <h2>Card 3</h2>
-          <p>This is your third Christmas card.</p>
-        </div>
-        <div class="back">
-          <h2>Card 3 Back</h2>
-          <p>Secret message on the back of Card 1.</p>
-        </div>
-      </div> -->
     </main>
-  </body>
+</body>
 </html>

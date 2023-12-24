@@ -14,62 +14,101 @@ body {
 
 .header {
     background-color: #c62828;
-    color: #fff;
+    color: blanchedalmond;
     text-align: center;
     padding: 50px;
     background-image: url(https://64.media.tumblr.com/cc60473edb90ff9c90ffc1993ac2d4a8/tumblr_mesmd84Il51rt479bo1_500.jpg);
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.acorn {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
 }
 
 main {
     height: 100%;
     display: flex;
     flex-grow: 1;
-    /* width: 100vw; */
     flex-direction: column;
     background-image: url(https://i.pinimg.com/originals/4f/f8/cb/4ff8cb05bc608e3ddbf8b72afae52222.gif);
     background-size: cover;
     background-repeat: no-repeat;
+    justify-content: center;
+    /* align-items: center; */
+    /* font-size: 1.2rem; */
 }
 
 .card {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 100px;
-    margin: auto;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
+    transition: opacity 0.5s;
+    color: blanchedalmond;
     display: flex;
-    width: calc(100% - 96px);
-    opacity: 0.8;
+    flex-direction: column;
+    height: 300px;
+    width: 90%;
+    align-items: baseline;
 }
 
-.card.flipped {
-    transform: rotateY(180deg);
+.card-1 {
+    margin: 32px;
+    font-size: 2rem;
+    width: 50%;
 }
 
-.card>div {
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.card-2 {
+    display: none;
+}
+
+.container-div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.movie-img {
+    height: 400px;
+    width: 100%;
+    background-image: url(./Pojken_och_hägern_affisch_TriArt_Film_webb.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 32px;
+}
+
+.dejt-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin-right: 100px;
 }
 
-.card .front {
-    transform: rotateY(0deg);
+.card.fade-out {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+    /* Add opacity transition for fade-out */
 }
 
-.card .back {
-    transform: rotateY(180deg);
+.card.fade-in {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s;
+    /* Add opacity transition for fade-in */
+}
+
+.card-1.fade-out {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+}
+
+.card-2.fade-in {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s;
 }
